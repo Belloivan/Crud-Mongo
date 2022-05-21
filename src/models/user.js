@@ -1,5 +1,6 @@
 const mongoose = require ("mongoose"); 
 
+// Datos a ingresar para la creacion del usuario
 const userSchema = mongoose.Schema ({
   nombre: {
       type: String, 

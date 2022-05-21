@@ -12,7 +12,7 @@ router.post("/users", (req, res) => {
       .catch((error) => res.json({message: error}));
   });
 
-  //get all users 
+  //Ver todos los usuario creados
   router.get("/users", (req, res) => {
    userSchema 
       .find()
@@ -20,7 +20,7 @@ router.post("/users", (req, res) => {
       .catch((error) => res.json({message: error}));
   });
 
-// get a user
+// Ver un usuario creado
   router.get("/users/:id", (req, res) => {
    const { id } = req.params;
    userSchema 
@@ -29,7 +29,7 @@ router.post("/users", (req, res) => {
       .catch((error) => res.json({message: error}));
   });
 
-  // update a user
+  // Modificar datos de usuario
   router.put("/users/:id", (req, res) => {
    const { id } = req.params;
    const { nombre, edad, mail} = req.body;
@@ -39,7 +39,7 @@ router.post("/users", (req, res) => {
       .catch((error) => res.json({message: error}));
   });
 
-    // delete a user
+    // Eliminar usuario
     router.delete("/users/:id", (req, res) => {
       const { id } = req.params;
       userSchema  

@@ -1,21 +1,25 @@
+//Ingresar datos
 ###
 POST http://localhost:9000/api/users HTTP/1.1
 Content-Type: application/json
 
 {
-    "nombre": "Bello",
-    "edad": "28",
-    "mail": "bello@gmail.com"
+    "nombre": "Ivan",
+    "edad": "20",
+    "mail": "i.bello@gmail.com"
 }
 
+//Ver todos los usuarios creados
 ###
 GET http://localhost:9000/api/users HTTP/1.1
 
+//Ver un usuario creado
 ###
-GET http://localhost:9000/api/users/6285340f8969b4ebe4702a72 HTTP/1.1
+GET http://localhost:9000/api/users/6287c109b145b93392d0dfa5 HTTP/1.1
 
+//Modificar datos de un usuario creado
 ###
-PUT http://localhost:9000/api/users/6285340f8969b4ebe4702a72 HTTP/1.1
+PUT http://localhost:9000/api/users/6287c109b145b93392d0dfa5 HTTP/1.1
 Content-Type: application/json
 
 {
@@ -24,5 +28,6 @@ Content-Type: application/json
     "mail": "bello@gmail.com"
 }
 
+//Eliminar Usuario
 ###
-DELETE http://localhost:9000/api/users/6285340f8969b4ebe4702a72 HTTP/1.1
+DELETE http://localhost:9000/api/users/6285315f8969b4ebe4702a70 HTTP/1.1
