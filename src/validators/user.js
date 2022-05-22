@@ -1,5 +1,5 @@
 const {check} = require ("express-validator")
-const res = require ("express/lib/response");
+
 
 const validateCreate = [
    check("nombre")
@@ -10,7 +10,7 @@ const validateCreate = [
    .exists()
    .not()
    .isNumeric(),
-   check("mail")
+   check("email")
    .exists()
    .isEmail(),
    (req, res, next) => {}

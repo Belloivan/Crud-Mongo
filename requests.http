@@ -6,7 +6,7 @@ Content-Type: application/json
 {
     "nombre": "Ivan",
     "edad": "20",
-    "mail": "i.bello@gmail.com"
+    "email": "i.bell"
 }
 
 //Ver todos los usuarios creados
