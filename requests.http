@@ -36,4 +36,4 @@ Content-Type: application/json
 
 //Eliminar Usuario
 ###
-DELETE http://localhost:9000/api/users/628af09ddae93220111ff120 HTTP/1.1
+DELETE http://localhost:9000/api/users/628af3520593ce72aea5b0a7 HTTP/1.1

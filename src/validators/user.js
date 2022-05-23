@@ -17,15 +17,14 @@ const validateCreate = [
    .isEmail(),
    check("usuario")
    .isEmpty()
-   .not()
    .exists(),
    check("dni")
    .isEmpty()
    .isNumeric()
-   .not()
    .exists(),
    check("contraseña")
-   .isEmpty(),
+   .isEmpty()
+   .isLength({ min:8}),
    (req, res, next) => {}
 ]
 
