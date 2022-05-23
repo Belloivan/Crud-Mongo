@@ -14,15 +14,19 @@ const validateCreate = [
    .isEmpty()
    .not()
    .exists()
+   .normalizeEmail()
    .isEmail(),
    check("usuario")
+   .not()
    .isEmpty()
    .exists(),
    check("dni")
+   .not()
    .isEmpty()
    .isNumeric()
    .exists(),
    check("contraseña")
+   .not()
    .isEmpty()
    .isLength({ min:8}),
    (req, res, next) => {}
