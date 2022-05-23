@@ -32,7 +32,7 @@ router.post("/users", (req, res) => {
   // Modificar datos de usuario
   router.put("/users/:id", (req, res) => {
    const { id } = req.params;
-   const { nombre, edad, mail} = req.body;
+   const { nombre, edad, mail, dni, contraseña, usuario} = req.body;
    userSchema  
       .updateOne({_id: id}, { $set: {nombre, edad, mail, dni, contraseña, usuario} })
       .then((data) => res.json(data))

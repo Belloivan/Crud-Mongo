@@ -4,12 +4,12 @@ POST http://localhost:9000/api/users HTTP/1.1
 Content-Type: application/json
 
 {
-    "nombre": "Ivan",
-    "dni": "2345",
+    "nombre": "ih",
+    "dni": "34",
     "edad": "20",
-    "email": "i.bello@gmail.com",
-    "usuario": "ivan",
-    "contraseña": "3355"
+    "email": "i.bellogmail.com",
+    "usuario": "",
+    "contraseña": ""
 }
 
 //Ver todos los usuarios creados
@@ -36,4 +36,4 @@ Content-Type: application/json
 
 //Eliminar Usuario
 ###
-DELETE http://localhost:9000/api/users/628ae35b62ea6e5e1cb031e8 HTTP/1.1
+DELETE http://localhost:9000/api/users/628af09ddae93220111ff120 HTTP/1.1

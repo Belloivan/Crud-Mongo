@@ -11,14 +11,21 @@ const validateCreate = [
    .not()
    .isNumeric(),
    check("email")
+   .isEmpty()
+   .not()
    .exists()
    .isEmail(),
    check("usuario")
+   .isEmpty()
+   .not()
    .exists(),
    check("dni")
+   .isEmpty()
+   .isNumeric()
+   .not()
    .exists(),
    check("contraseña")
-   .exists(),
+   .isEmpty(),
    (req, res, next) => {}
 ]
 
