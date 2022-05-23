@@ -13,6 +13,12 @@ const validateCreate = [
    check("email")
    .exists()
    .isEmail(),
+   check("usuario")
+   .exists(),
+   check("dni")
+   .exists(),
+   check("contraseña")
+   .exists(),
    (req, res, next) => {}
 ]
 

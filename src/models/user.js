@@ -13,6 +13,18 @@ const userSchema = mongoose.Schema ({
   email: {
       type: String, 
       required: true
+  },
+  contraseña: {
+      type: String,
+      require: true
+  },
+  dni:{
+      type: Number,
+      require: true
+  },
+  usuario: {
+      type: String,
+      require: true
   }
 });
 

@@ -5,8 +5,11 @@ Content-Type: application/json
 
 {
     "nombre": "Ivan",
+    "dni": "2345",
     "edad": "20",
-    "email": "i.bell"
+    "email": "i.bello@gmail.com",
+    "usuario": "ivan",
+    "contraseña": "3355"
 }
 
 //Ver todos los usuarios creados
@@ -25,9 +28,12 @@ Content-Type: application/json
 {
     "nombre": "ivan bello",
     "edad": "20",
-    "mail": "bello@gmail.com"
+    "mail": "bello@gmail.com",
+    "usuario": "",
+    "contraseña": "",
+    "dni": ""
 }
 
 //Eliminar Usuario
 ###
-DELETE http://localhost:9000/api/users/6285315f8969b4ebe4702a70 HTTP/1.1
+DELETE http://localhost:9000/api/users/628ae35b62ea6e5e1cb031e8 HTTP/1.1

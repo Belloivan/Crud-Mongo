@@ -34,7 +34,7 @@ router.post("/users", (req, res) => {
    const { id } = req.params;
    const { nombre, edad, mail} = req.body;
    userSchema  
-      .updateOne({_id: id}, { $set: {nombre, edad, mail} })
+      .updateOne({_id: id}, { $set: {nombre, edad, mail, dni, contraseña, usuario} })
       .then((data) => res.json(data))
       .catch((error) => res.json({message: error}));
   });
