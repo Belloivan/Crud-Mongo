@@ -8,7 +8,6 @@ const validateCreate = [
    .isEmpty(),
    check("edad")
    .exists()
-   .not()
    .isNumeric(),
    check("email")
    .isEmpty()
@@ -17,11 +16,9 @@ const validateCreate = [
    .normalizeEmail()
    .isEmail(),
    check("usuario")
-   .not()
    .isEmpty()
    .exists(),
    check("dni")
-   .not()
    .isEmpty()
    .isNumeric()
    .exists(),
